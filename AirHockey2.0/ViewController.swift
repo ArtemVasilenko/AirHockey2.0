@@ -1,20 +1,13 @@
-//
-//  ViewController.swift
-//  AirHockey2.0
-//
-//  Created by Артем on 5/15/19.
-//  Copyright © 2019 Артем. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    var topGoal: TopGoalConstraints!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        topGoal = TopGoalConstraints(fakeView: FakeView(view: self.view))
+        self.view.addSubview(topGoal)
     }
-
-
 }
 
