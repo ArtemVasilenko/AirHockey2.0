@@ -6,7 +6,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topGoal = TopGoalConstraints(fakeView: FakeView(view: self.view))
+        topGoal = TopGoalConstraints(fakeView: FakeView())
+        
         self.view.addSubview(topGoal)
     }
 }
